@@ -23,3 +23,16 @@ git init
 7. Eelmise tegevuse kontrollimiseks võib vaadata faili jälgimisstatust. git status
 
 8. Koosta jälgitavale failile commit - muudatuse kirjelduse git commit -m "muudatuse sõnaline kirjeldamine"
+
+------ 9-10 remote teeme üks kord, et tekitada repo ja ühendus---
+
+9. Loo repo githubis - github@github.com:kasutaja/reponimi.git
+
+10. Loo remote ühendus githubi repoga
+git remote add ühendusenimi git@github.com:kasutaja/reponimi.git
+git remote -v
+
+-----------
+11. Remote - teeme korduvalt iga commit sooritamise pärast---
+git push -uf ühendusenimi master
+
