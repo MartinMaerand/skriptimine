@@ -15,3 +15,11 @@ cd skriptimine
 
 5. Tee lokaalne git repo antud kaustas muudatuste jälgimiseks
 git init
+
+---- 6-8. punktid teeme korduvalt uga muudatuse tekkimisel ---
+
+6. Kui failis on tehtud muudatused - lisame faili jälgimisele git add failinimi
+
+7. Eelmise tegevuse kontrollimiseks võib vaadata faili jälgimisstatust. git status
+
+8. Koosta jälgitavale failile commit - muudatuse kirjelduse git commit -m "muudatuse sõnaline kirjeldamine"
