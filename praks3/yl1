@@ -1,0 +1,10 @@
+#!/bin/bash
+#kalendri loomine
+echo
+echo -n "Today is " `date`
+date +"%A, %B %d %Y"
+echo -n "Time is "
+date +"%R"
+echo
+echo -n "Calendar of"
+cal

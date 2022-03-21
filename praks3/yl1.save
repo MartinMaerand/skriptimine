@@ -1,0 +1,3 @@
+#!/bin/bash
+#kalendri loomine
+echo "Täna on " `date` date +
