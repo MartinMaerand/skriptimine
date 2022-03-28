@@ -1,0 +1,16 @@
+#!/bin/bash
+#Bussikohtade planeerimine
+echo
+#Inimeste arv bussis
+echo -n "Sisesta reisijate arv:"
+read reisijad
+#Kohtade arv bussis
+echo -n "Sisesta kohtade arv bussis:"
+read kohad
+#Arvutuskäik
+#Kohtade arv jagatud reisijate arvuga. Tulemuseks on busside arv
+bussid=$(($reisijad/$kohad))
+#Mahajääjate arv
+ylejaanud=$(($reisijad%$kohad))
+#Tulemused
+echo "Kokku on vaja $bussid täisbussi ja sellega jääb veel $ylejaanud inimest ilma kohata."
