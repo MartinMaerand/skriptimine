@@ -1,0 +1,12 @@
+#!/bin/bash
+#Väljastab kolmnurga pindala väärtuse koos seletava kirjeldusega
+echo "Sisesta a kylje vaartus: "
+read a
+echo "Sisesta b kylje vaartus: "
+read b
+echo "Sisesta c kylje vaartus: "
+read c
+
+p=`echo "scale=2;($a + $b + $c)/2"|bc`
+pindala=`echo "sqrt($p*($p-$a)*($p-$b)*($p-$c))"|bc -s`
+echo "Pindala= $pindala"
