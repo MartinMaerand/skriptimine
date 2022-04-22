@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#See skript utleb, mitmendal päeval ma tagasi jõuan
+echo "Sisesta millal soidad ära: "
+read x
+echo "Sisesta reisi oopaevade arv: "
+read y
+
+arvutus=`echo "($y-(($y/7)*7))+$x"|bc`
+echo "Tagasi oled päeval number $arvutus"
